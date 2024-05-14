@@ -17,7 +17,7 @@ const User = require("./models/User")
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect("mongodb+srv://mongo:mongo123@cluster0.3bzmn0t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") 
+mongoose.connect("mongodb+srv://mongo:<password>@cluster0.3bzmn0t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") 
     .then(() => {
         console.log("database connected")
     }, error => {
